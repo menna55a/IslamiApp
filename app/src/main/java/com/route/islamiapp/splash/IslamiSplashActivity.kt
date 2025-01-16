@@ -1,19 +1,18 @@
-package com.route.islamiapp
+package com.route.islamiapp.splash
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.route.islamiapp.R
 
-class MainActivity : AppCompatActivity() {
+class IslamiSplashActivity : AppCompatActivity() {
     // 1- Version Control System (Git)
     // 2- Islamic App
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splash_islami)
     }
 
 }

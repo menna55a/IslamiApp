@@ -6,6 +6,10 @@ plugins {
 android {
     namespace = "com.route.islamiapp"
     compileSdk = 35
+    //enable viewbinding
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.route.islamiapp"
