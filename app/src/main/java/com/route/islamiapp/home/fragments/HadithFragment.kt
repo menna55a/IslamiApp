@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.route.islamiapp.databinding.FragmentHadithBinding
-import com.route.islamiapp.databinding.FragmentQuranBinding
 
-class hadithFragment : Fragment() {
-    lateinit var binding: FragmentHadithBinding
+class HadithFragment : Fragment() {
+    private lateinit var binding: FragmentHadithBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentHadithBinding.inflate(inflater,container,false)
         return binding.root
     }
