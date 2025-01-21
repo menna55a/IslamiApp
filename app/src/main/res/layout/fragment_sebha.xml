@@ -3,12 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/sedha_bg">
 
     <ImageView
         android:id="@+id/sebha_logo_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/islami_logo"
         android:src="@drawable/islami_logo_image"
         android:scaleType="fitXY"
         android:layout_marginTop="5dp"/>
@@ -33,6 +35,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/sebha_head_image"
                     android:src="@drawable/sebha_head_image" />
 
                 <ImageView
@@ -40,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
+                    android:contentDescription="@string/sebha_body_image"
                 android:src="@drawable/sebha_body_image" />
             </LinearLayout>
 
@@ -53,14 +57,14 @@
                 android:id="@+id/sebha_text_filed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="سبحان الله"
+                tools:text="سبحان الله"
                 style="@style/sebha_text_view"/>
 
                 <TextView
                     android:id="@+id/sebha_time_text_filed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    tools:text="0"
                     style="@style/sebha_text_view"/>
             </LinearLayout>
 

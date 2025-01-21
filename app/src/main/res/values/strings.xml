@@ -4,4 +4,7 @@
     <string name="hadith">Hadith</string>
     <string name="sebha">Sebha</string>
     <string name="radio">Radio</string>
+    <string name="sebha_head_image">Sebha Head Image</string>
+    <string name="sebha_body_image">Sebha Body Image</string>
+    <string name="islami_logo">Islami Logo</string>
 </resources>
