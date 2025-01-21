@@ -10,4 +10,5 @@
     <color name="gold_dark_color">#DAB98D</color>
     <color name="gold_navigation_bar_color">#E2BE7F</color>
     <color name="active_selector_color">#99141414</color>
+    <color name="black2">#202020</color>
 </resources>

@@ -7,4 +7,9 @@
     <string name="sebha_head_image">Sebha Head Image</string>
     <string name="sebha_body_image">Sebha Body Image</string>
     <string name="islami_logo">Islami Logo</string>
+    <string name="quran_logo_image">Quran Logo Image</string>
+    <string name="suras_list">Suras List</string>
+    <string name="hadith_logo_image">Hadith Logo Image</string>
+    <string name="start_corner">Start Corner</string>
+    <string name="end_corner">End Corner</string>
 </resources>
