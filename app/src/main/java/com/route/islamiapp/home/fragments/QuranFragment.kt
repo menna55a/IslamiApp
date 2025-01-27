@@ -1,12 +1,15 @@
 package com.route.islamiapp.home.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.route.islamiapp.chapterDetails.ChapterDetailsActivity
 import com.route.islamiapp.databinding.FragmentQuranBinding
 import com.route.islamiapp.home.adapters.ChaptersAdapter
+import com.route.islamiapp.home.adapters.callback.OnChapterClickListener
 import com.route.islamiapp.model.AppConstants
 
 class QuranFragment : Fragment() {
@@ -22,6 +25,15 @@ class QuranFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         adapter = ChaptersAdapter(AppConstants.getChaptersList())
+
+        adapter.onChapterClickListener =   OnChapterClickListener{ chapter, position ->
+            // Logic
+            val intent = Intent(activity, ChapterDetailsActivity::class.java)
+            intent.putExtra(AppConstants.CHAPTER_KEY, chapter)
+            startActivity(intent)
+
+        }
+
         binding.chaptersListRecyclerView.adapter = adapter
     }
 }

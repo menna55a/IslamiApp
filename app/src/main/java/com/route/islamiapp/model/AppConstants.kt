@@ -1,6 +1,9 @@
 package com.route.islamiapp.model
 
 object AppConstants {
+
+    val CHAPTER_KEY = "chapter"
+
       val  arabicChaptersTitles = listOf(
         "الفاتحه",
         "البقرة",

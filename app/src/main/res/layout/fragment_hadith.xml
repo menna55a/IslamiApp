@@ -22,8 +22,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hadeth_list_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_hadeth"/>
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        tools:listitem="@layout/item_hadeth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hadith_logo_image"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

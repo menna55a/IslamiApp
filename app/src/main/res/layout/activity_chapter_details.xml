@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quran_details_bg_"
+    tools:context=".chapterDetails.ChapterDetailsActivity">
+
+   <Toolbar
+       android:id="@+id/chapter_details_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent">
+       
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/chapter_title_en_text_view"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:text="Al_Fatiha"
+               android:textSize="22sp"
+               android:textColor="@color/gold_dark_color"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"/>
+
+           <ImageView
+               android:id="@+id/back_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/back_ic"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent"/>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </Toolbar>
+
+    <TextView
+        android:id="@+id/chapter_title_ar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="الفاتحة"
+        android:textSize="22sp"
+        android:textColor="@color/gold_dark_color"
+        android:layout_marginVertical="18dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/chapter_details_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/verse_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_verse"
+        app:layout_constraintHeight_percent=".7"
+        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chapter_title_ar_text_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
