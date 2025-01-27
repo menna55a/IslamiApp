@@ -12,4 +12,10 @@
     <string name="hadith_logo_image">Hadith Logo Image</string>
     <string name="start_corner">Start Corner</string>
     <string name="end_corner">End Corner</string>
+    <array name="azkarList">
+        <item> سبحان الله </item>
+        <item> الحمد لله </item>
+        <item> لا اله الا الله </item>
+        <item>  الله اكبر </item>
+    </array>
 </resources>

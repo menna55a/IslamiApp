@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.RotateAnimation
 import androidx.fragment.app.Fragment
+import com.route.islamiapp.R
 import com.route.islamiapp.databinding.FragmentQuranBinding
 import com.route.islamiapp.databinding.FragmentSebhaBinding
 
@@ -13,7 +14,8 @@ class SebhaFragment : Fragment() {
 
     lateinit var binding: FragmentSebhaBinding
     private var counter = 0
-    private val sebhaList = listOf("سبحان الله", "الحمد الله", "الله اكبر")
+   // private val sebhaList = listOf("سبحان الله", "الحمد الله", "الله اكبر")
+    lateinit var azkarList : MutableList<String>
     private var sebhaIndex = 0
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -25,8 +27,10 @@ class SebhaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        azkarList = resources.getStringArray(R.array.azkarList).toMutableList()
+
         // binding.sebhaTextFiled.text = sebhaList[sebhaList]
-        binding.sebhaTextFiled.text = sebhaList[sebhaIndex]
+        binding.sebhaTextFiled.text = azkarList[sebhaIndex]
         binding.sebhaTimeTextFiled.text = counter.toString()
 
 
@@ -58,8 +62,8 @@ class SebhaFragment : Fragment() {
             counter = 0
             binding.sebhaTimeTextFiled.text = counter.toString()
 
-            sebhaIndex = (sebhaIndex + 1) % sebhaList.size
-            binding.sebhaTextFiled.text = sebhaList[sebhaIndex]
+            sebhaIndex = (sebhaIndex + 1) % azkarList.size
+            binding.sebhaTextFiled.text = azkarList[sebhaIndex]
         }
        // counter++
        // if(counter % 33 == 0){
