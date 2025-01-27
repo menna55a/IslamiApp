@@ -1,11 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    //alias(libs.plugins.kotlin.parcelize)
+    id("kotlin-parcelize")
 }
 
 android {
     namespace = "com.route.islamiapp"
     compileSdk = 35
+    //enable viewbinding
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.route.islamiapp"

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sedha_bg">
+
+    <ImageView
+        android:id="@+id/sebha_logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/islami_logo"
+        android:src="@drawable/islami_logo_image"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/first_pate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sebha_logo_image"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/sebha_head_image"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/sebha_head_image"
+                    android:src="@drawable/sebha_head_image" />
+
+                <ImageView
+                    android:id="@+id/sebha_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/sebha_body_image"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/sebha_body_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/sebha_text_filed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="سبحان الله"
+                style="@style/sebha_text_view"/>
+
+                <TextView
+                    android:id="@+id/sebha_time_text_filed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="0"
+                    style="@style/sebha_text_view"/>
+            </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>
